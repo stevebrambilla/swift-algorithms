@@ -17,10 +17,11 @@ let package = Package(
     products: [
         .library(
             name: "Algorithms",
+            type: .dynamic,
             targets: ["Algorithms"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-numerics", from: "0.0.1"),
+        .package(url: "https://github.com/stevebrambilla/swift-numerics", from: "0.0.1"),
     ],
     targets: [
         .target(
